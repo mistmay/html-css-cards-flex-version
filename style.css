@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+#card-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 485px;
+}
+
+.card {
+    width: 300px;
+    height: 485px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5%;
+    overflow: hidden;
+    background-color: rgba(228, 228, 228, 255);
+    box-shadow: 2px 5px rgba(177, 177, 177, 255);
+    margin: 20px;
+}
+
+.card:hover {
+    transform: scale(1.03);
+}
+
+.card-title {
+    background-color: rgba(177, 177, 177, 255);
+    width: 100%;
+    height: 12.5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.card-title-left {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    height: 100%;
+}
+
+.profile-img {
+    background-color: white;
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 35px;
+}
+
+.title h3 {
+    font-size: 1rem;
+}
+
+.title p {
+    font-size: 0.8rem;
+    color: white;
+}
+
+.card-title-right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+}
+
+.card-image {
+    width: 100%;
+    height: 50%;
+}
+
+.card-image img {
+    width: 100%;
+    height: 100%;
+}
+
+.card-icon {
+    width: 100%;
+    height: 12.5%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 30px;
+    gap: 15px;
+}
+
+.card-icon a {
+    color: darkblue;
+}
+
+.card-description {
+    width: 100%;
+    height: 25%;
+    font-size: 0.8rem;
+    padding: 0 20px;
+}
+
+.card-description span {
+    font-weight: bold;
+}
+
+@media (max-width: 1000px) {
+    main {
+        height: auto;
+    }
+
+    #card-container {
+        height: auto;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        width: 680px;
+    }
+
+}
+
+@media (max-width: 680px) {
+    #card-container {
+        width: 100%;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
